@@ -6,7 +6,7 @@ namespace Pincode
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Sample Demo of REGEX");
+            Console.WriteLine("Sample Demo of REGEX !");
             ValidatePincode obj = new ValidatePincode();
             obj.Validate("516001");
         }
