@@ -22,8 +22,7 @@ namespace Pincode
             ValidatePincode uc4 = new ValidatePincode();
             uc4.uc4Validate("516 001");
 
-            //ValidatePincode uc1 = new ValidatePincode();
-            //uc1.uc1Validate("abc");
+           
         }
     }
 }
