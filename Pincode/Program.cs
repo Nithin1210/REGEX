@@ -4,12 +4,14 @@ namespace Pincode
 {
     public class Program
     {
+        static string[] allemails = { "abc@yahoo.com", "abc-100@yahoo.com", "abc.100@yahoo.com", "abc111@abc.com", "abc-100@abc.net", "abc.100@abc.com.au", "abc@1.com", "abc@gmail.com.com", "abc+100@gmail.com" };
         public static void Main(string[] args)
         {
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter the Option :\n1.Validate Pincode \n2.Validate Email\n3.Exit");
+                Console.WriteLine(" # Validation Statements ");
+                Console.WriteLine("\nEnter the Option :\n1.Validate Pincode \n2.Validate Email\n3.All_mails Check");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
 
@@ -52,7 +54,18 @@ namespace Pincode
                         ValidateEmail uc5Email = new ValidateEmail();
                         uc5Email.uc5Validate("abc.xyz@bridgelabz.com");
                         break;
+
                     case 3:
+                        Console.WriteLine("Sample Emails to Text Check !");
+                        ValidateEmail email = new ValidateEmail();
+                        foreach(string emails in allemails)
+                        {
+                            Console.WriteLine(emails);
+                            email.uc5Validate(emails);
+                        }
+                        break;
+
+                    case 4:
                         flag = false;
                         break;
                     default:
